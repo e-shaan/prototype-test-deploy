@@ -54,8 +54,7 @@ const dataProvider = FirebaseDataProvider(firebaseConfig, {
   },
 });
 
-class App extends React.Component {
-  render() {
+const App = () =>{
     return (
       <>
         <Admin
@@ -99,6 +98,5 @@ class App extends React.Component {
       </>
     );
   }
-}
 
 export default App;
