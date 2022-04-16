@@ -63,7 +63,6 @@ export const BatchList = (props) => (
       <ReferenceField label="Student Ref" source="student_ref.___refid" reference="students">
         <TextField source="name" />
       </ReferenceField>
-
       <ShowButton label="" />
       <EditButton label="" />
       <DeleteButton label="" redirect={false} />
@@ -117,13 +116,30 @@ export const BatchCreate = (props) => (
       <RichTextInput source="body" />
       <DateInput source="date" parse={val => new Date(val)} />
       <ReferenceInput
-        label="Student Id"
+        label="Student"
         source="student_id"
         reference="students"
         // filter={{ isAdmin: true }}
       >
         <SelectInput optionText="name" />
       </ReferenceInput>
+      <ReferenceInput
+        label="Teacher"
+        source="teacher_id"
+        reference="teachers"
+        // filter={{ isAdmin: true }}
+      >
+        <SelectInput optionText="name" />
+      </ReferenceInput>
+      <ReferenceInput
+        label="Course"
+        source="course_id"
+        reference="courses"
+        // filter={{ isAdmin: true }}
+      >
+        <SelectInput optionText="name" />
+      </ReferenceInput>
+      
       <ReferenceInput
         label="Student Ref"
         source="student_ref.___refid"
