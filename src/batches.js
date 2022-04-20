@@ -57,7 +57,7 @@ export const BatchList = (props) => (
       <TextField source="id" />
       <TextField source="title" />
       <TextField source="publishing_state" />
-      <TextField source="updatedby" />
+      <TextField source="AN OBVIOUS CHANGE" />
       <TextField source="createdby" />
       <RichTextField source="body" />
       <ReferenceField label="Student Ref" source="student_ref.___refid" reference="students">

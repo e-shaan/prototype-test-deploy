@@ -19,10 +19,12 @@ import * as Students from "./students";
 import * as Courses from "./courses";
 import * as Teachers from "./teachers";
 import * as Comments from "./comments";
-
+  
 import CustomLoginPage from './CustomLoginPage';
 import EventMonitor from './EventMonitor';
 
+
+/*
 let firebaseConfig ={
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -32,6 +34,17 @@ let firebaseConfig ={
     appId: process.env.REACT_APP_FIREBASE_APP_ID,
     measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
   }
+
+  */
+ const firebaseConfig = {
+  apiKey: "AIzaSyBk2FoffkW83uU42C9S7DINtov4hvay5to",
+  authDomain: "prototype-d7d0d.firebaseapp.com",
+  projectId: "prototype-d7d0d",
+  storageBucket: "prototype-d7d0d.appspot.com",
+  messagingSenderId: "495474941466",
+  appId: "1:495474941466:web:d4a854563877eb9307fba3",
+  measurementId: "G-NQDLBNP5Z9"
+};
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 console.log("HELLOOO" + process.env.REACT_APP_FIREBASE_API_KEY);
 console.log({firebaseConfig, firebaseApp});
